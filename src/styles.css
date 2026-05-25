@@ -981,6 +981,47 @@ h2 {
   text-decoration: underline;
 }
 
+.footer {
+  width: min(var(--container), calc(100% - 40px));
+  margin: 72px auto 0;
+  padding: 22px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.footer strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--heading);
+  font-size: 1rem;
+}
+
+.footer span {
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+.footer-links a {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: var(--accent);
+}
+
 @media (max-width: 880px) {
   .hero {
     min-height: calc(100svh - 92px);
@@ -1049,10 +1090,10 @@ h2 {
   }
 
   .theme-toggle {
-    width: 100%;
+    width: 40px;
     height: 40px;
-    max-width: none;
     justify-content: center;
+    order: 1;
   }
 
   .hero-palette {
@@ -1162,6 +1203,10 @@ h2 {
 
   .project-image-panel {
     height: 210px;
+  }
+
+  .footer {
+    margin-top: 52px;
   }
 }
 
@@ -1284,5 +1329,17 @@ h2 {
   .project-copy-panel {
     padding: 0;
     background: transparent;
+  }
+
+  .footer {
+    width: calc(100% - 32px);
+    margin-top: 44px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
+    gap: 12px;
   }
 }
