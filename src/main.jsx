@@ -5,6 +5,22 @@ import heroImage from './public/hero-image.png';
 
 const projects = [
   {
+    title: 'QR-Based File Sharing System',
+    type: 'Real-Time App',
+    year: '2026',
+    status: 'Full Stack',
+    color: '#0FFF50',
+    image: '/projects/qr.JPG',
+    description:
+      'A full-stack real-time file sharing app that lets users transfer files from mobile to laptop or PC by scanning a QR code, without login or complicated setup.',
+    result: 'Instant mobile-to-laptop file transfer with live updates.',
+    stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.IO', 'Cloudinary', 'QR Code'],
+    links: {
+      live: 'https://file-share-system.vercel.app/',
+      code: 'https://github.com/sspadwal/QR-SHARE',
+    },
+  },
+  {
     title: 'DevMindAI Ai-Powered Platform',
     type: 'AI Platform',
     year: '2026',
