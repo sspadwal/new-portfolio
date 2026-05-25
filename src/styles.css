@@ -1230,13 +1230,13 @@ h2 {
   .project-inner {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: 14px;
     padding: 0;
-    overflow: hidden;
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    background: var(--surface);
-    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.16);
+    overflow: visible;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
   }
 
   .project-card.image-left .project-image-panel,
@@ -1253,15 +1253,17 @@ h2 {
 
   .project-image-panel {
     height: 190px;
-    border-radius: 0;
+    border: 0;
+    border-radius: 10px;
     filter: none;
   }
 
   .project-image-panel img {
-    border-radius: 0;
+    border-radius: 10px;
   }
 
   .project-copy-panel {
-    padding: 18px;
+    padding: 0;
+    background: transparent;
   }
 }
