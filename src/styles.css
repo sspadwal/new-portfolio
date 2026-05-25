@@ -1162,7 +1162,7 @@ h2 {
   .hero {
     min-height: calc(100svh - 96px);
     grid-template-columns: 46px minmax(0, 1fr) 46px;
-    padding: 46px 0 44px;
+    padding: 46px 0 18px;
   }
 
   .hero-visual {
@@ -1201,7 +1201,7 @@ h2 {
   }
 
   .projects {
-    padding-top: 24px;
+    padding-top: 8px;
   }
 
   .project-image-panel {
