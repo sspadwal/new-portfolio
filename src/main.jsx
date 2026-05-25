@@ -5,54 +5,99 @@ import heroImage from './public/hero-image.png';
 
 const projects = [
   {
-    title: 'E-commerce Dashboard',
-    type: 'Admin System',
-    year: '2026',
-    status: 'Frontend + API',
-    color: '#fc815c',
-    image:
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80',
-    description:
-      'Admin panel for products, orders, users, and sales reports with reusable data views.',
-    result: 'Fast management flow.',
-    stack: ['React', 'Node.js', 'Express', 'MongoDB'],
-    links: {
-      live: '#',
-      code: '#',
-    },
-  },
-  {
-    title: 'Task Management App',
-    type: 'Productivity Tool',
+    title: 'DevMindAI Ai-Powered Platform',
+    type: 'AI Platform',
     year: '2026',
     status: 'Full Stack',
-    color: '#ffe578',
-    image:
-      'https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=900&q=80',
+    color: '#fc815c',
+    image: '/projects/p1.webp',
     description:
-      'Team task tracker with auth, project boards, task states, and smart filters.',
-    result: 'Clear daily planning.',
-    stack: ['React', 'Node.js', 'PostgreSQL'],
+      'A full-stack AI web app with secure auth, Gemini-powered content and image generation, and community features.',
+    result: 'AI content tools with secure user flow.',
+    stack: ['PostgreSQL', 'Express', 'React', 'Node.js', 'Tailwind CSS', 'OpenAI', 'Gemini API'],
     links: {
-      live: '#',
-      code: '#',
+      live: 'https://devmindai.vercel.app/',
+      code: 'https://github.com/sspadwal/DevMindAI.git',
     },
   },
   {
-    title: 'Portfolio API',
-    type: 'Backend Service',
+    title: 'CloHaven Ecommerce Platform',
+    type: 'E-commerce',
+    year: '2026',
+    status: 'MERN Stack',
+    color: '#ffe578',
+    image: '/projects/p2.webp',
+    description:
+      'A full-stack MERN e-commerce website with product management, cart, checkout, secure payments, and admin dashboard.',
+    result: 'Shopping flow with admin management.',
+    stack: ['MongoDB', 'Express', 'React', 'Node.js', 'Stripe', 'Material UI', 'Admin Panel'],
+    links: {
+      live: 'https://clohaven.vercel.app/',
+      code: 'https://github.com/sspadwal/clohaven-client.git',
+    },
+  },
+  {
+    title: 'Daily Task Manager',
+    type: 'Task App',
+    year: '2026',
+    status: 'MERN Stack',
+    color: '#47afa1',
+    image: '/projects/p3.webp',
+    description:
+      'To-Do List web app built on MERN stack, supporting add, update, delete tasks with token-based authentication.',
+    result: 'Authenticated task management.',
+    stack: ['MongoDB', 'Express', 'React', 'Node.js', 'CSS', 'Responsive UI'],
+    links: {
+      live: 'https://taskifyzone.vercel.app/',
+      code: 'https://github.com/sspadwal/task-manager-client.git',
+    },
+  },
+  {
+    title: 'World Atlas React App',
+    type: 'React App',
     year: '2026',
     status: 'REST API',
-    color: '#47afa1',
-    image:
-      'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80',
+    color: '#459bd5',
+    image: '/projects/p4.webp',
     description:
-      'REST API for project data, contact messages, admin access, and content updates.',
-    result: 'Clean backend structure.',
-    stack: ['Express', 'MongoDB', 'JWT'],
+      'A React world explorer app with API integration, country details, sorting, routing, and a responsive UI.',
+    result: 'Country explorer with routing.',
+    stack: ['React', 'React Router', 'JavaScript', 'REST API', 'Responsive UI'],
+    links: {
+      live: 'https://global-atlas.vercel.app/',
+      code: 'https://github.com/sspadwal/worldatlas.git',
+    },
+  },
+  {
+    title: 'MERN Blog Platform',
+    type: 'Blog Platform',
+    year: '2026',
+    status: 'Full Stack',
+    color: '#CC00CC',
+    image: '/projects/p5.webp',
+    description:
+      'Cross-device MERN blog application with secure login, CRUD functionality, and an interactive blogging community.',
+    result: 'Secure CRUD blogging platform.',
+    stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'CSS', 'JWT', 'REST API'],
     links: {
       live: '#',
-      code: '#',
+      code: 'https://github.com/yourusername/social-media-dashboard',
+    },
+  },
+  {
+    title: 'University Website',
+    type: 'Website',
+    year: '2026',
+    status: 'Frontend',
+    color: '#7de714',
+    image: '/projects/p7.webp',
+    description:
+      'Designed and developed a fully responsive university website using HTML, CSS, and JavaScript.',
+    result: 'Responsive university landing site.',
+    stack: ['HTML', 'CSS', 'JavaScript', 'Responsive UI', 'UI/UX', 'Web Development'],
+    links: {
+      live: 'https://harvardcamp.netlify.app/',
+      code: 'https://github.com/sspadwal/harvard-university.git',
     },
   },
 ];
@@ -248,8 +293,12 @@ function App() {
                   </ul>
 
                   <div className="project-links">
-                    <a href={project.links.live}>Live</a>
-                    <a href={project.links.code}>Code</a>
+                    <a href={project.links.live} target="_blank" rel="noreferrer">
+                      Live
+                    </a>
+                    <a href={project.links.code} target="_blank" rel="noreferrer">
+                      Code
+                    </a>
                   </div>
                 </div>
               </div>
