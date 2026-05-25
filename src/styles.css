@@ -1137,16 +1137,17 @@ h2 {
   }
 
   .hero-visual {
-    transform: translateX(-10px);
+    width: min(460px, 78vw);
+    transform: translateX(-6px);
   }
 
   .hero-palette {
-    left: 10px;
+    left: 8px;
     top: 122px;
   }
 
   .social-rail {
-    right: 4px;
+    right: 8px;
     top: 122px;
   }
 
