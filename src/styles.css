@@ -1020,7 +1020,7 @@ h2 {
 
   .hero-palette {
     position: absolute;
-    left: 24px;
+    left: 28px;
     top: 96px;
     display: grid;
     grid-template-columns: 1fr;
@@ -1042,7 +1042,7 @@ h2 {
 
   .social-rail {
     position: absolute;
-    right: 24px;
+    right: 28px;
     top: 96px;
     display: grid;
     grid-template-columns: 1fr;
