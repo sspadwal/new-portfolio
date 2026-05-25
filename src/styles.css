@@ -348,8 +348,12 @@ a {
   padding: 0;
   border: 1px solid color-mix(in srgb, var(--surface) 40%, transparent);
   border-radius: 999px;
-  background: color-mix(in srgb, var(--surface) 18%, transparent);
-  box-shadow: 0 10px 20px rgba(31, 23, 19, 0.08);
+  background:
+    radial-gradient(circle at 34% 28%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 36%),
+    color-mix(in srgb, var(--surface) 18%, transparent);
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--accent) 16%, transparent),
+    0 10px 20px rgba(31, 23, 19, 0.08);
   cursor: pointer;
   transition: background 180ms ease, transform 180ms ease, color 180ms ease;
 }
@@ -363,17 +367,38 @@ a {
 
 .theme-icon {
   display: inline-flex;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   align-items: center;
   justify-content: center;
   color: var(--accent);
+  transition:
+    color 180ms ease,
+    transform 180ms ease;
 }
 
 .theme-icon svg {
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.theme-icon.sun-mode svg circle {
   fill: currentColor;
+  stroke: none;
+}
+
+.theme-icon.moon-mode {
+  color: color-mix(in srgb, var(--accent) 78%, #ffffff);
+}
+
+.theme-toggle:hover .theme-icon,
+.theme-toggle:focus-visible .theme-icon {
+  transform: rotate(-10deg) scale(1.08);
 }
 
 .nav-toggle {
