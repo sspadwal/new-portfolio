@@ -267,23 +267,20 @@ a {
 
 @media (max-width: 860px) {
   .hero-palette {
-    position: relative;
-    left: auto;
-    top: auto;
-    grid-column: 1 / -1;
-    justify-self: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 1rem;
+    position: absolute;
+    left: 14px;
+    top: 128px;
+    grid-column: auto;
+    justify-self: auto;
+    display: grid;
+    width: auto;
+    margin-bottom: 0;
   }
 
   .palette-options {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 0.85rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 9px;
   }
 }
 
@@ -1036,18 +1033,28 @@ h2 {
   }
 
   .palette-button {
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
   }
 
   .social-rail {
     position: absolute;
-    right: 28px;
-    top: 96px;
+    right: 14px;
+    top: 128px;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 9px;
     z-index: 10;
+  }
+
+  .social-rail a {
+    width: 36px;
+    height: 36px;
+  }
+
+  .social-rail svg {
+    width: 16px;
+    height: 16px;
   }
 
   .social-rail a {
@@ -1125,16 +1132,18 @@ h2 {
 
   .hero {
     min-height: calc(100vh - 126px);
-    grid-template-columns: 16px minmax(0, 1fr) 16px;
+    grid-template-columns: 46px minmax(0, 1fr) 46px;
     padding: 56px 0 88px;
   }
 
   .hero-palette {
-    left: 20px;
+    left: 10px;
+    top: 122px;
   }
 
   .social-rail {
-    right: 20px;
+    right: 10px;
+    top: 122px;
   }
 
   .hero-name {
