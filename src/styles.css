@@ -1136,6 +1136,10 @@ h2 {
     padding: 56px 0 88px;
   }
 
+  .hero-visual {
+    transform: translateX(-10px);
+  }
+
   .hero-palette {
     left: 10px;
     top: 122px;
