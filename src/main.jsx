@@ -239,17 +239,17 @@ function App() {
         <div className="hero-visual">
           <img src={heroImage} alt="Developer working on a computer" />
         </div>
-        <h1 id="intro-title" className="sr-only">Full Stack Developer</h1>
+        <h1 id="intro-title" className="sr-only">Frontend Developer</h1>
         <h2 className="hero-name">Shailesh Padwal</h2>
-        <h4 className="hero-role">Full Stack Developer</h4>
+        <h4 className="hero-role">Frontend Developer</h4>
         <div className="actions" aria-label="Portfolio links">
-          <a className="button primary" href="mailto:your.email@example.com">
-            Contact Me
+          <a className="button primary" href="#projects">
+            Projects
           </a>
           <a
             className="button"
-            href="/resume.pdf"
-            download
+            href="/Shailesh_Frontend_Developer.pdf"
+            download="Shailesh_Frontend_Developer.pdf"
           >
             Download CV
           </a>
@@ -327,7 +327,7 @@ function App() {
       <footer className="footer">
         <div>
           <strong>Shailesh Padwal</strong>
-          <span>Full Stack Developer</span>
+          <span>Frontend Developer</span>
         </div>
 
         <nav className="footer-links" aria-label="Footer social links">

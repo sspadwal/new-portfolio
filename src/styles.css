@@ -664,14 +664,14 @@ h1 {
 
 .button.primary {
   border-color: var(--accent);
-  background: var(--accent);
-  color: var(--button-text);
+  background: var(--accent-hover);
+  color: #ffffff;
 }
 
 .button.primary:hover,
 .button.primary:focus-visible {
-  background: var(--accent-hover);
-  color: var(--button-text);
+  background: var(--accent);
+  color: #ffffff;
 }
 
 .button.ghost {
