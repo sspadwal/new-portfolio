@@ -36,6 +36,33 @@ const projects = [
       code: 'https://github.com/sspadwal/DevMindAI.git',
     },
   },
+
+  {
+  title: 'Mind Buddy AI',
+  type: 'AI SaaS Platform',
+  year: '2026',
+  status: 'Full Stack',
+  color: '#8B5CF6',
+  image: '/projects/p9.webp',
+  description:
+    'An AI-powered employee feedback and workplace wellness platform that analyzes team sentiment, provides empathetic AI responses, generates narrative summaries, and helps managers identify issues before they escalate.',
+  result: 'Transforms employee feedback into actionable AI-driven insights and sentiment analytics.',
+  stack: [
+    'React.js',
+    'Tailwind CSS',
+    'Node.js',
+    'MongoDB',
+    'FastAPI',
+    'Python',
+    'Google Gemini API',
+    'JWT Authentication',
+    'Vercel',
+  ],
+  links: {
+    live: 'https://mindbuddyai.vercel.app/',
+    code: 'https://github.com/sspadwal/mind_buddy_ai',
+  },
+},
   {
     title: 'CloHaven Ecommerce Platform',
     type: 'E-commerce',
